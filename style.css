@@ -1,0 +1,68 @@
+body {
+  background-color: black;
+  
+}
+#myForm {
+    height: 500px;
+    width: 400px;
+    background-color: dimgray;
+    border-color: black;
+    margin-left: 400px;
+    border-radius: 30px;
+    animation: slideIn 0.8s ease-out;
+}
+#myForm h2 {
+    margin-top: 40px;
+    color: darkslateblue;
+    text-align: center; 
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 70%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+  margin-bottom: 10px;
+}
+input:focus {
+  border-color: #2575fc;
+  outline: none;
+}
+label {
+    
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #333;
+}
+.container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  height: 100px;           
+}
+.container button {
+    height: 25px;
+    width: 60px;
+    color:black;
+    border-radius: 6px;
+    font-weight: bold;
+    border-color: blue;
+    cursor: pointer;
+    
+}
+button:hover {
+    background-color: blue;
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
